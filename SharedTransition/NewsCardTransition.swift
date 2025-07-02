@@ -457,13 +457,12 @@ struct NewsDetailView: View {
                             Image(systemName: "xmark")
                                 .font(.system(size: 16, weight: .medium))
                                 .foregroundColor(.white)
-                                .frame(width: 32, height: 32)
+                                .frame(width: 40, height: 40)
                                 .background(
                                     Circle()
                                         .fill(.ultraThinMaterial)
                                         .environment(\.colorScheme, .dark)
                                 )
-                                .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2)
                         }
                         
                         Spacer()
@@ -475,17 +474,16 @@ struct NewsDetailView: View {
                             Image(systemName: "square.and.arrow.up")
                                 .font(.system(size: 16, weight: .medium))
                                 .foregroundColor(.white)
-                                .frame(width: 32, height: 32)
+                                .frame(width: 40, height: 40)
                                 .background(
                                     Circle()
                                         .fill(.ultraThinMaterial)
                                         .environment(\.colorScheme, .dark)
                                 )
-                                .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2)
                         }
                     }
                     .padding(.horizontal, 20)
-                    .padding(.top, safeAreaTop + 44) // Move toolbar below status bar
+                    .padding(.top, safeAreaTop + 64) // Move toolbar below status bar
                     .padding(.bottom, 16)
                     .background(
                         // Gradient overlay for better button visibility
